@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    height: 100vh; 
+    background-color: #f8f9fa;
+}
+
+.wrapper {
+    display: flex; 
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.container {
+    width: 800px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px palevioletred;
+    transition: width 0.3s ease; 
+}
+
+.container.small {
+    width: 400px; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px; 
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 20px; 
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+label {
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%; 
+    text-align: left; 
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%; 
+    padding: 8px;
+    margin: 5px 0; 
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+
+button {
+    padding: 10px 20px;
+    background-color: pink;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 100%; 
+}
+
+button:hover {
+    background-color: #ff69b4;
+}
+
+/* Gaya untuk card hasil */
+.result {
+    width: 400px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 4px 8px palevioletred;
+    display: none;
+}
+
+.result.show {
+    display: block; 
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
